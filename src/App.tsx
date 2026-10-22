@@ -3,8 +3,8 @@ import { app } from "./data/app";
 import { buttons } from "./data/buttons";
 import type { ButtonAction } from "./types/button";
 import "./App.css"
-import { useGreeting } from "./hooks/useGreeting";
-import { useLogoToggle } from "./hooks/useLoggoToggle";
+import { useGreeting } from "./features/greeting/hooks/useGreeting";
+import { useLogoToggle } from "./features/logo-switcher/hooks/useLoggoToggle";
 import { StackListWidget } from "./features/stack/TechStack";
 
 

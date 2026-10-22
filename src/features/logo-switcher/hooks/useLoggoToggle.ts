@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { app } from "../data/app";
+import { app } from "../../../data/app";
 
 export function useLogoToggle() {
     const [isAltLogo, setIsAltLogo] = useState(false)
