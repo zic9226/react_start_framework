@@ -1,4 +1,4 @@
-import type { StackItem } from "../../types/stack";
+import type { StackItem } from "../../data/types";
 import "./StackList.css"
 
 type StackListProps = {

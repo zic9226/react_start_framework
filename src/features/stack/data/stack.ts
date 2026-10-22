@@ -1,4 +1,4 @@
-import type { StackItem } from "../types/stack";
+import type { StackItem } from "./types";
 
 export const stack: StackItem[] = [
     { id: 1, name: "React", url: "https://react.dev" },

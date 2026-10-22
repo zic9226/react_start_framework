@@ -1,13 +1,12 @@
-import { useState } from "react";
-import { Button } from "./components/Button";
+import { Button } from "./shared/ui/Button";
 import { app } from "./data/app";
 import { buttons } from "./data/buttons";
 import type { ButtonAction } from "./types/button";
 import "./App.css"
-import { StackList } from "./components/StackList";
-import { stack } from "./data/stack";
 import { useGreeting } from "./hooks/useGreeting";
 import { useLogoToggle } from "./hooks/useLoggoToggle";
+import { StackListWidget } from "./features/stack/TechStack";
+
 
 export default function App() {
   const { count, greet } = useGreeting()
@@ -34,7 +33,7 @@ export default function App() {
 
       </div>
 
-      <StackList items={stack} />
+      <StackListWidget />
       <p>I said Hello {count} times</p>
       <p>Autor: {app.author}</p>
     </section>
