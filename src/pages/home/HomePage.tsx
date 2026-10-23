@@ -8,7 +8,7 @@ import { useLogoToggle } from "../../features/logo-switcher";
 import { StackListWidget } from "../../features/stack";
 
 
-export default function App() {
+export function HomePage() {
   const { count, greet } = useGreeting()
   const { currentLogo, toggleLogo } = useLogoToggle(app.logo, app.altLogo)
 
