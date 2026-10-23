@@ -1,6 +1,6 @@
 import type { AppData } from "../types/app";
-import viteLogo from "../assets/vite.svg";
-import reactLogo from "../assets/react.svg"
+import viteLogo from "../../../assets/vite.svg";
+import reactLogo from "../../../assets/react.svg"
 
 export const app: AppData = {
     title: "Welcome to my React Framework",

@@ -1,11 +1,11 @@
-import { Button } from "./shared/ui/Button";
+import { Button } from "../../shared/ui/Button";
 import { app } from "./data/app";
 import { buttons } from "./data/buttons";
 import type { ButtonAction } from "./types/button";
-import "./App.css"
-import { useGreeting } from "./features/greeting";
-import { useLogoToggle } from "./features/logo-switcher/";
-import { StackListWidget } from "./features/stack/";
+import "./HomePage.css"
+import { useGreeting } from "../../features/greeting";
+import { useLogoToggle } from "../../features/logo-switcher";
+import { StackListWidget } from "../../features/stack";
 
 
 export default function App() {
