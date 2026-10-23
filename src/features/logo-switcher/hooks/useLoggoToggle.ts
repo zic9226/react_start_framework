@@ -1,17 +1,20 @@
 import { useState } from "react";
-import { app } from "../../../data/app";
 
-export function useLogoToggle() {
+
+export function useLogoToggle(logo: string, altLogo: string) {
     const [isAltLogo, setIsAltLogo] = useState(false)
 
     function toggleLogo() {
         setIsAltLogo((prev) => !prev)
     }
 
-
-const currentLogo = isAltLogo ? app.altLogo : app.logo
+    
+const currentLogo = isAltLogo ? altLogo : logo
 
 
 return { currentLogo, toggleLogo }
 
 }
+
+
+

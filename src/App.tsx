@@ -3,14 +3,14 @@ import { app } from "./data/app";
 import { buttons } from "./data/buttons";
 import type { ButtonAction } from "./types/button";
 import "./App.css"
-import { useGreeting } from "./features/greeting/hooks/useGreeting";
-import { useLogoToggle } from "./features/logo-switcher/hooks/useLoggoToggle";
-import { StackListWidget } from "./features/stack/TechStack";
+import { useGreeting } from "./features/greeting";
+import { useLogoToggle } from "./features/logo-switcher/";
+import { StackListWidget } from "./features/stack/";
 
 
 export default function App() {
   const { count, greet } = useGreeting()
-  const { currentLogo, toggleLogo } = useLogoToggle()
+  const { currentLogo, toggleLogo } = useLogoToggle(app.logo, app.altLogo)
 
 
   const actions: Record<ButtonAction, () => void> = {
