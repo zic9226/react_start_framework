@@ -1,0 +1,69 @@
+/* ---------- меню ---------- */
+
+.app-nav {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  padding: 16px;
+  border-bottom: 1px solid var(--border);
+}
+
+.app-nav button {
+  font: inherit;
+  font-size: 15px;
+  padding: 6px 16px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--text);
+  cursor: pointer;
+  transition: border-color 0.2s, color 0.2s, background 0.2s;
+}
+
+.app-nav button:hover {
+  border-color: var(--accent-border);
+  color: var(--text-h);
+}
+
+.app-nav button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.app-nav button.active {
+  color: var(--accent);
+  background: var(--accent-bg);
+  border-color: var(--accent-border);
+}
+
+/* ---------- раздел и выпадающий список ---------- */
+
+.nav-section {
+  position: relative;
+}
+
+.nav-dropdown {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 220px;
+  padding: 6px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+}
+
+.app-nav .nav-dropdown button {
+  text-align: left;
+  border: none;
+  border-radius: 8px;
+}
+
+.app-nav .nav-dropdown button:hover {
+  background: var(--accent-bg);
+}
