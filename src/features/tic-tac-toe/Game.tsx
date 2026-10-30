@@ -1,3 +1,11 @@
+import { Board } from './components/Board';
+import "./TicTacToe.css";
+
 export function Game() {
-    return <p>Here is the Tic Tac Toe game!</p>
+    return (
+    <div className="game">
+        <Board />
+        
+    </div>
+    )
 }

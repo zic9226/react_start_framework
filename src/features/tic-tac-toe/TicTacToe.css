@@ -1,0 +1,21 @@
+.game .square {
+    width: 64px;
+    height: 64px;
+    padding: 0;
+    font: inherit;
+    font-size: 28px;
+    font-weight: 600;
+    background: var(--bg);
+    color: var(--text-h);
+    border: 2px solid var(--border);
+    cursor: pointer;
+    margin: 4px 
+}
+
+.game .square:hover {
+    background: var(--accent-bg);
+}
+
+.game .board-row {
+  display: flex;
+}
